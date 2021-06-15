@@ -2,15 +2,10 @@ import pathlib
 from setuptools import setup
 
 
-HERE = pathlib.Path(__file__).parent
-
-README = (HERE / "README.md").read_text()
-
 setup(
     name="saveit",
-    verson="1.0.0",
-    description="A cli utility to write text ina a file",
-    long_description=README,
+    version="1.0.0",
+    description="A utility to write text in a file right from termainal",
     long_description_content_type="text/markdown",
     author="Subham Singh",
     author_email="imsks007@gmail.com",
@@ -22,7 +17,7 @@ setup(
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.7",
     ],
-    packages=["saveit"],
+    py_modules=["saveit"],
     include_package_data=True,
     python_requires=">=3.7",
     install_requires=["Click"],
