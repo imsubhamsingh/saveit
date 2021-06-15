@@ -6,7 +6,7 @@ import click
 @click.argument("filename", type=click.File("w"), default="-", required=False)
 def cli(string, filename):
     """
-    Creates a text file and save your data there.
+    Creates a specified file and save your data there.
     """
     data = filename.write(string)
     click.echo(file=filename)
