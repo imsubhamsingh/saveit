@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name="saveit",
-    version="1.2.0",
+    version="1.2.1",
     description="A utility to write text in a file right from terminal",
     long_description_content_type="text/markdown",
     author="Subham Singh",
